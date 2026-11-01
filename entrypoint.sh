@@ -9,4 +9,6 @@ echo "============================================="
 sed "s/VAN_BLOG_EMAIL/${EMAIL}/g" /app/caddyTemplate.json >/app/caddy.json
 caddy start --config /app/caddy.json
 
+export PORT=3001
+
 node start.js
